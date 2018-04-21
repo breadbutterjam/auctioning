@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>auction</title>
+	<script type="text/javascript" src="..\jQuery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="data.js"></script>
+	<style>
+        .containers
+		{
+			height: auto;
+			border: 1px solid black;
+			display: inline-block;
+			padding-top: 50px;
+		}
+
+		.bid-amount
+		{
+			height: 50px;
+			font-size: 20px;
+			width: 100px;
+			text-align: center;
+		}
+
+		.team-details
+		{
+			width: 25%;
+			height: auto;
+			border: 1px solid black;
+			display: inline-block;
+		}
+    </style>
+</head>
+<body onload="onBodyLoad()">
+<div id="main">
+	<span id="player-details" class="containers" style="width: 100%; text-align: center">
+		<h1 id="current-player-name">John Oliver</h1>
+		<h3 id="isMarqueePlayer">marquee player</h3>
+		<h3 id="player-gender">male</h3>
+		<span id="player-notes">part of u-19 mumbai</span>
+	</span>
+	<span id="bids-and-buttons" class="containers" style="width: 100%;">
+		<span>
+			<div>next bid at 200</div>
+			<input type="text" class="bid-amount" value="100">
+			<input type="button" value="+" id="">
+		</span>
+		<span>
+			<input type="button" class="button" id="btn-sold" value="sold">
+		</span>
+		<span>
+			<input type="button" class="button" id="btn-unsold" value="unsold">
+		</span>
+		<span>
+			<input type="button" class="button" id="btn-generate-another" value="generate another">
+			<input type="checkbox" name="checkbox" id="generate-only-marquee" value="value"><label for="generate-only-marquee">Get only marquee players</label>
+			
+		</span>
+	</span>
+	<span id="teams" class="containers" style="width:100%">
+		
+	</span>
+
+</div>
+</body>
+</html>
