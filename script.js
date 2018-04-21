@@ -2,7 +2,8 @@ let TEAM_CAPACITY_TOTAL = 10;
 let TEAM_CAPACITY_BOYS = 8;
 let TEAM_CAPACITY_GIRLS = 2;
 
-
+let currentBiddingTeam;
+let currentlyBiddingPlayer;
 
 function onBodyLoad()
 {
@@ -37,7 +38,44 @@ function init()
 
 function AddeventListeners()
 {
-    $("#btn-generate-another").on("click", GenerateAnotherClicked)
+    $("#btn-generate-another").on("click", GenerateAnotherClicked);
+
+    $('.team-details').on("click", TeamClicked);
+
+    $("#btn-unsold").on("click", UnsoldClicked)
+}
+
+function UnsoldClicked()
+{
+    let player = availablePlayers[currentlyBiddingPlayer];
+    player.status = "unsold";
+    availablePlayers.splice(currentlyBiddingPlayer);
+
+    GenerateAnotherClicked()
+}
+
+function TeamClicked(event)
+{
+    //console.log(event.currentTarget);
+    let team = event.currentTarget;
+    let teamID = team.querySelectorAll('h3')[0].textContent;
+    
+    if($(team).hasClass("currently-bidding-team"))
+    {
+        $(team).removeClass("currently-bidding-team");
+        currentBiddingTeam = "";
+    }
+    else
+    {
+        SetCurrentBiddingTeam(teamID);
+    }
+}
+
+function SetCurrentBiddingTeam(teamID)
+{
+    $('.currently-bidding-team').removeClass("currently-bidding-team");
+    $("#" + teamID).addClass("currently-bidding-team");
+    currentBiddingTeam = data.teams[teamID];
 }
 
 function GenerateAnotherClicked(event)
@@ -61,6 +99,8 @@ function GenerateAnotherClicked(event)
     numberOfPlayersInPool = pool.length;
     randomIndex = generateRandomNumber(numberOfPlayersInPool - 1);
     playerObject = pool[randomIndex]; 
+
+    currentlyBiddingPlayer = randomIndex;
 
     addPlayerDetails(playerObject);
 }

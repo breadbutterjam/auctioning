@@ -81,7 +81,7 @@ var data = {
   "teams": {
     "total": 4,
     "team1": {
-      "id": "team1",
+      "id": "Team-Ashish",
       "selected": {
         "total": 1,
         "boys": 1,
@@ -97,7 +97,7 @@ var data = {
       "remainingPurse": 9900
     },
     "team2": {
-      "id": "team2",
+      "id": "Team-Anish",
       "selected": {
         "total": 0,
         "boys": 0,
@@ -108,7 +108,7 @@ var data = {
       "remainingPurse": 10000
     },
     "team3": {
-      "id": "team3",
+      "id": "Team-Bhushan",
       "selected": {
         "total": 0,
         "boys": 0,
@@ -119,7 +119,7 @@ var data = {
       "remainingPurse": 10000
     },
     "team4": {
-      "id": "team4",
+      "id": "Team-Kevin",
       "selected": {
         "total": 0,
         "boys": 0,
