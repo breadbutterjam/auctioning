@@ -80,7 +80,7 @@ var data = {
   ],
   "teams": {
     "total": 4,
-    "team1": {
+    "Team-Ashish": {
       "id": "Team-Ashish",
       "selected": {
         "total": 1,
@@ -96,7 +96,7 @@ var data = {
       },
       "remainingPurse": 9900
     },
-    "team2": {
+    "Team-Anish": {
       "id": "Team-Anish",
       "selected": {
         "total": 0,
@@ -107,7 +107,7 @@ var data = {
       },
       "remainingPurse": 10000
     },
-    "team3": {
+    "Team-Bhushan": {
       "id": "Team-Bhushan",
       "selected": {
         "total": 0,
@@ -118,7 +118,7 @@ var data = {
       },
       "remainingPurse": 10000
     },
-    "team4": {
+    "Team-Kevin": {
       "id": "Team-Kevin",
       "selected": {
         "total": 0,

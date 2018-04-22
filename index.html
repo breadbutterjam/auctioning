@@ -4,22 +4,23 @@
 	<title>auction</title>
 	<script type="text/javascript" src="..\jQuery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="data_3.js"></script>
 	<style>
         .containers
 		{
 			height: auto;
-			border: 1px solid black;
+			/* border: 1px solid black; */
 			display: inline-block;
-			padding-top: 50px;
+			/* padding-top: 50px; */
 		}
 
 		.bid-amount
 		{
 			height: 50px;
-			font-size: 20px;
+			font-size: 50px;
 			width: 100px;
 			text-align: center;
+			width: 150px;
 		}
 
 		.team-details
@@ -35,6 +36,26 @@
 		{
 			background-color: #add8e6;
 		}
+		
+		#teams
+		{
+			padding-top: 30px;	
+		}
+		.empty
+		{
+			display: none;
+		}
+		
+		.out-of-bid
+		{
+			background-color: grey;
+			cursor: default;
+		}
+		
+		#bids-and-buttons
+		{
+			text-align: center;
+		}
 
     </style>
 </head>
@@ -47,11 +68,12 @@
 		<span id="player-notes">part of u-19 mumbai</span>
 	</span>
 	<span id="bids-and-buttons" class="containers" style="width: 100%;">
-		<span>
-			<div>next bid at 200</div>
+		<div style="padding-bottom: 20px;">
+			<span style="font-size: 35px;"> bid </span>
 			<input type="text" class="bid-amount" value="100">
-			<input type="button" value="+" id="">
-		</span>
+			<div style="font-size: 20px; padding: 10px">next bid at 200</div>
+			<!-- <input type="button" value="+" id=""> -->
+		</div>
 		<span>
 			<input type="button" class="button" id="btn-sold" value="sold">
 		</span>
