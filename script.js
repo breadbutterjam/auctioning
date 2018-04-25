@@ -65,6 +65,19 @@ function AddeventListeners()
     $("#btn-unsold").on("click", UnsoldClicked);
 
     $("#btn-sold").on("click", SoldClicked);
+
+    $('.team-details').on("dblclick", TeamDoubleClicked);
+
+}
+
+function TeamDoubleClicked(event)
+{
+    // console.log("B ", event)
+    if (event.ctrlKey)
+    {
+        // console.log("A")
+        console.table(data.teams[event.currentTarget.id].selected.details);
+    }
 }
 
 function SoldClicked(event)
