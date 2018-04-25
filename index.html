@@ -1,95 +1,153 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>auction</title>
 	<script type="text/javascript" src="..\jQuery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="data_3.js"></script>
 	<style>
-        .containers
-		{
+		* {
+			font-family: monospace;
+		}
+		input[type=button] {
+			position: relative;
+			width: 170px;
+			padding: 5px;
+			overflow: hidden;
+			border-width: 0;
+			outline: none;
+			border-radius: 2px;
+			box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+			color: #ecf0f1;
+			background: #21900e;
+			transition: background-color .3s;
+		}
+
+		input[type=button]:hover,
+		input[type=button]:focus {
+			background-color: #27ae60;
+		}
+
+		input[type=button]>* {
+			position: relative;
+		}
+
+		input[type=button] span {
+			display: block;
+			padding: 12px 24px;
+		}
+
+		input[type=button]:before {
+			content: "";
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			display: block;
+			width: 0;
+			padding-top: 0;
+
+			border-radius: 100%;
+
+			background-color: rgba(236, 240, 241, .3);
+
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		input[type=button]:active:before {
+			width: 120%;
+			padding-top: 120%;
+
+			transition: width .2s ease-out, padding-top .2s ease-out;
+		}
+
+		.containers {
 			height: auto;
 			/* border: 1px solid black; */
 			display: inline-block;
 			/* padding-top: 50px; */
 		}
 
-		.bid-amount
-		{
-			height: 50px;
-			font-size: 50px;
+		.bid-amount {
+			height: 45px;
+			font-size: 45px;
 			width: 100px;
 			text-align: center;
 			width: 150px;
 		}
 
-		.team-details
-		{
-			width: 25%;
+		.team-details {
+			width: 22%;
+			padding: 10px;
 			height: auto;
+			background: lightgrey;
 			border: 1px solid black;
 			display: inline-block;
 			cursor: pointer;
 		}
 
-		.currently-bidding-team
-		{
-			background-color: #add8e6;
+		.currently-bidding-team {
+			background-color: #fdffff;
 		}
-		
-		#teams
-		{
-			padding-top: 30px;	
+
+		#teams {
+			padding-top: 30px;
 		}
-		.empty
-		{
+
+		.empty {
 			display: none;
 		}
-		
-		.out-of-bid
-		{
+
+		.out-of-bid {
 			background-color: grey;
 			cursor: default;
 		}
-		
-		#bids-and-buttons
-		{
+
+		#bids-and-buttons {
 			text-align: center;
 		}
-
-    </style>
+	</style>
 </head>
-<body onload="onBodyLoad()">
-<div id="main">
-	<span id="player-details" class="containers" style="width: 100%; text-align: center; height: 190px;">
-		<h1 id="current-player-name">John Oliver</h1>
-		<h3 id="isMarqueePlayer">marquee player</h3>
-		<h3 id="player-gender">male</h3>
-		<span id="player-notes">part of u-19 mumbai</span>
-	</span>
-	<span id="bids-and-buttons" class="containers" style="width: 100%;">
-		<div style="padding-bottom: 20px;">
-			<span style="font-size: 35px;"> bid </span>
-			<input type="text" class="bid-amount" value="100">
-			<div style="font-size: 20px; padding: 10px">next bid at 200</div>
-			<!-- <input type="button" value="+" id=""> -->
-		</div>
-		<span>
-			<input type="button" class="button" id="btn-sold" value="sold">
-		</span>
-		<span>
-			<input type="button" class="button" id="btn-unsold" value="unsold">
-		</span>
-		<span>
-			<input type="button" class="button" id="btn-generate-another" value="generate another">
-			<input type="checkbox" name="checkbox" id="generate-only-marquee" value="value"><label for="generate-only-marquee">Get only marquee players</label>
-			
-		</span>
-	</span>
-	<span id="teams" class="containers" style="width:100%">
-		
-	</span>
 
-</div>
+<body onload="onBodyLoad()">
+	<div id="main">
+		<span id="player-details" class="containers" style="width: 100%; text-align: center; height: 160px;">
+			<h1 id="current-player-name">John Oliver</h1>
+			<h3 id="isMarqueePlayer">marquee player</h3>
+			<h3 id="player-gender">male</h3>
+			<span id="player-notes">part of u-19 mumbai</span>
+		</span>
+		<span id="bids-and-buttons" class="containers" style="width: 100%;">
+			<div style="padding-bottom: 20px;">
+				<span style="font-size: 35px;"> bid </span>
+				<input type="text" class="bid-amount" value="100">
+				<!-- <div style="font-size: 20px; padding: 10px">next bid at 200</div> -->
+				<!-- <input type="button" value="+" id=""> -->
+			</div>
+			<span>
+				<input type="button" class="button" id="btn-sold" value="sold">
+			</span>
+			<span>
+				<input type="button" class="button" id="btn-unsold" value="unsold">
+			</span>
+			<span>
+				<input type="button" class="button" id="btn-generate-another" value="generate another">
+				<input style="display: none" type="checkbox" name="checkbox" id="generate-only-marquee" value="value">
+				<label style="display: none" for="generate-only-marquee">Get only marquee players</label>
+
+			</span>
+		</span>
+		<span id="teams" class="containers" style="width:100%">
+
+		</span>
+
+	</div>
 </body>
+
 </html>

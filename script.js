@@ -71,7 +71,7 @@ function SoldClicked(event)
 {
     let player = availablePlayers[currentlyBiddingPlayer];
     player.status = "sold";
-    availablePlayers.splice(currentlyBiddingPlayer);
+    availablePlayers.splice(currentlyBiddingPlayer, 1);
 
     let bidValue = Number($('.bid-amount')[0].value);
 
@@ -127,7 +127,7 @@ function UnsoldClicked(event)
 {
     let player = availablePlayers[currentlyBiddingPlayer];
     player.status = "unsold";
-    availablePlayers.splice(currentlyBiddingPlayer);
+    availablePlayers.splice(currentlyBiddingPlayer, 1);
 
     saveToLocalStorage();
 
@@ -386,4 +386,54 @@ function generateRandomNumber(maxNumber)
     retunVal = Math.round(Math.random() * maxNumber);
 
     return retunVal;
+}
+// ================================ADMIN ONLY=========================
+function getIndexFromAvailablePlayer(name)
+{
+    let len = availablePlayers.length;
+    let ret = [];
+    for (let i=0; i<len; i++)
+    {
+        if (availablePlayers[i].name.toLowerCase().indexOf(name.toLowerCase()) > -1)
+        {
+            ret.push({"i": i, "playerObject": availablePlayers[i]});
+        }
+    }
+
+    return ret;
+}
+
+
+function addUnsoldToPool()
+{
+    let numPlayers = data.players.length;
+    let unsoldPlayers = getUnsoldPlayers();
+
+
+    //change status of unsold players and add them to available pool. 
+    let numOfUnsoldPlayers = unsoldPlayers.length;
+    for(let i=0; i<numOfUnsoldPlayers; i++)
+    {
+        unsoldPlayers[i].status = "Available";
+        availablePlayers.push(unsoldPlayers[i]);
+    }
+
+}
+
+
+function getUnsoldPlayers()
+{
+    let numPlayers = data.players.length;
+    let unsoldPlayers = [];
+    let playerObject;
+    for (let i=0; i<numPlayers; i++)
+    {
+        playerObject = data.players[i];
+        if (playerObject.status === "unsold")
+        {
+            unsoldPlayers.push(playerObject);
+        }
+    }
+
+    return unsoldPlayers;
 }

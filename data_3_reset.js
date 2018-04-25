@@ -8,7 +8,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -85,7 +85,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -118,7 +118,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -195,7 +195,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -217,7 +217,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -294,7 +294,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -360,7 +360,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -393,7 +393,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -492,7 +492,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -547,7 +547,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -580,7 +580,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -789,7 +789,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -877,7 +877,7 @@ var data = {
       "basePrice": 100,
       "sellingPrice": -1,
       "team": "",
-      "status": "sold",
+      "status": "Available",
       "notes": ""
     },
     {
@@ -897,184 +897,90 @@ var data = {
     "Team-Ashish": {
       "id": "Team-Ashish",
       "selected": {
-        "total": 2,
-        "boys": 2,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          11,
-          27
-        ],
-        "details": [
-          {
-            "playerID": 11,
-            "bid": 1200,
-            "name": "Ashish Asgola"
-          },
-          {
-            "playerID": 27,
-            "bid": 2200,
-            "name": "Jigar Shah"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 6600
+      "remainingPurse": 10000
     },
     "Team-Anish": {
       "id": "Team-Anish",
       "selected": {
-        "total": 2,
-        "boys": 2,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          8,
-          36
-        ],
-        "details": [
-          {
-            "playerID": 8,
-            "bid": 900,
-            "name": "Anish V"
-          },
-          {
-            "playerID": 36,
-            "bid": 4500,
-            "name": "Maitrey Jukar"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 4600
+      "remainingPurse": 10000
     },
     "Team-Bhushan": {
       "id": "Team-Bhushan",
       "selected": {
-        "total": 2,
-        "boys": 2,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          18,
-          1
-        ],
-        "details": [
-          {
-            "playerID": 18,
-            "bid": 1000,
-            "name": "Bhushan K"
-          },
-          {
-            "playerID": 1,
-            "bid": 3000,
-            "name": "Abhishek M "
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 6000
+      "remainingPurse": 10000
     },
     "Team-Kevin": {
       "id": "Team-Kevin",
       "selected": {
-        "total": 2,
-        "boys": 2,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          33,
-          50
-        ],
-        "details": [
-          {
-            "playerID": 33,
-            "bid": 900,
-            "name": "Kevin"
-          },
-          {
-            "playerID": 50,
-            "bid": 1400,
-            "name": "Rahul Dubey"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 7700
+      "remainingPurse": 10000
     },
     "Team-Pankaj": {
       "id": "Team-Pankaj",
       "selected": {
-        "total": 2,
-        "boys": 2,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          45,
-          20
-        ],
-        "details": [
-          {
-            "playerID": 45,
-            "bid": 800,
-            "name": "Pankaj Jadhav"
-          },
-          {
-            "playerID": 20,
-            "bid": 500,
-            "name": "Chirag Dagha"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 8700
+      "remainingPurse": 10000
     },
     "Team-Rehang": {
       "id": "Team-Rehang",
       "selected": {
-        "total": 1,
-        "boys": 1,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          53
-        ],
-        "details": [
-          {
-            "playerID": 53,
-            "bid": 900,
-            "name": "Rehang Fadia"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 9100
+      "remainingPurse": 10000
     },
     "Team-Shashank": {
       "id": "Team-Shashank",
       "selected": {
-        "total": 1,
-        "boys": 1,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          80
-        ],
-        "details": [
-          {
-            "playerID": 80,
-            "bid": 4500,
-            "name": "Yasser Patel"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 5500
+      "remainingPurse": 10000
     },
     "Team-Tahir": {
       "id": "Team-Tahir",
       "selected": {
-        "total": 1,
-        "boys": 1,
+        "total": 0,
+        "boys": 0,
         "girls": 0,
-        "playerIDs": [
-          72
-        ],
-        "details": [
-          {
-            "playerID": 72,
-            "bid": 3000,
-            "name": "Tahir"
-          }
-        ]
+        "playerIDs": [],
+        "details": []
       },
-      "remainingPurse": 7000
+      "remainingPurse": 10000
     }
   }
 }
