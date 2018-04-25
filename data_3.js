@@ -20,7 +20,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 3,
@@ -42,7 +42,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A+"
     },
     {
       "playerID": 5,
@@ -75,7 +75,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 8,
@@ -97,7 +97,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 10,
@@ -108,7 +108,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 11,
@@ -130,7 +130,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 13,
@@ -141,7 +141,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 14,
@@ -152,7 +152,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 15,
@@ -163,7 +163,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 16,
@@ -174,7 +174,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 17,
@@ -185,7 +185,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 18,
@@ -229,7 +229,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 22,
@@ -240,7 +240,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 23,
@@ -251,7 +251,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 24,
@@ -262,7 +262,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 25,
@@ -273,7 +273,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 26,
@@ -284,7 +284,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 27,
@@ -306,7 +306,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 29,
@@ -317,7 +317,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 30,
@@ -350,7 +350,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 33,
@@ -372,7 +372,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 35,
@@ -416,7 +416,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 39,
@@ -449,7 +449,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 42,
@@ -460,7 +460,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 43,
@@ -471,7 +471,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 44,
@@ -482,7 +482,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 45,
@@ -504,7 +504,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 47,
@@ -526,7 +526,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 49,
@@ -537,7 +537,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 50,
@@ -559,7 +559,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 52,
@@ -570,7 +570,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 53,
@@ -578,7 +578,7 @@ var data = {
       "gender": "Male",
       "isMarque": false,
       "basePrice": 100,
-      "sellingPrice": -1,
+      "sellingPrice": 800,
       "team": "",
       "status": "sold",
       "notes": ""
@@ -603,7 +603,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 56,
@@ -614,7 +614,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 57,
@@ -625,7 +625,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 58,
@@ -636,7 +636,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 59,
@@ -658,7 +658,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 61,
@@ -669,7 +669,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 62,
@@ -680,7 +680,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 63,
@@ -691,7 +691,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 64,
@@ -702,7 +702,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A+"
     },
     {
       "playerID": 65,
@@ -724,7 +724,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 67,
@@ -735,7 +735,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     },
     {
       "playerID": 68,
@@ -757,7 +757,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 70,
@@ -768,7 +768,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 71,
@@ -779,7 +779,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 72,
@@ -801,7 +801,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A"
     },
     {
       "playerID": 74,
@@ -812,7 +812,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade A+"
     },
     {
       "playerID": 75,
@@ -845,7 +845,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 78,
@@ -856,7 +856,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 79,
@@ -867,7 +867,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade U"
     },
     {
       "playerID": 80,
@@ -889,7 +889,7 @@ var data = {
       "sellingPrice": -1,
       "team": "",
       "status": "Available",
-      "notes": ""
+      "notes": "Grade B"
     }
   ],
   "teams": {
@@ -1031,12 +1031,12 @@ var data = {
         "details": [
           {
             "playerID": 53,
-            "bid": 900,
+            "bid": 800,
             "name": "Rehang Fadia"
           }
         ]
       },
-      "remainingPurse": 9100
+      "remainingPurse": 9200
     },
     "Team-Shashank": {
       "id": "Team-Shashank",

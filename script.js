@@ -437,3 +437,45 @@ function getUnsoldPlayers()
 
     return unsoldPlayers;
 }
+
+function getPlayerObjectFor(name)
+{
+    let numPlayers = data.players.length;
+    let playerObject;
+    for (let i=0; i<numPlayers; i++)
+    {
+        if (data.players[i].name === name)
+        {
+            playerObject = data.players[i];
+            console.log(i);
+        }
+    }
+
+    return playerObject;
+}
+
+function addGrades()
+{
+    let str = "Adit ::: A, Aishwarya S ::: , Akash Chavan ::: A+, Alisha ::: , Anandita Pandit ::: , Aneesh Nair ::: U, Ankush Tripathi ::: A, Anshul Verma ::: A, Ashutosh Rai ::: U, Atharva ::: U, Avinash Mete ::: U, Avirat Patil ::: A, Bhanu Pundhir ::: A, Bhavin Shah ::: A, Chaitali Pawar ::: , Darshan Dave ::: B, Faisal Ansari ::: U, Gauresh K ::: B, Girish T ::: U, Jaimeen  ::: A, Jessal M ::: U, Kalpesh Y ::: B, kapse ::: U, Karan Kiri ::: , Kasturi P ::: , Kenil Fadia ::: A, Kshitij Garg ::: U, Leena Angre ::: , Mamta S ::: , Mihir Mehta ::: U, Milita Chindarkar ::: , Namita Thadhani ::: , Nikhil Paradkar ::: B, Nilesh Pandey ::: B, Nilesh Pawar ::: U, Nirmal ::: U, Pankaj Sisodia ::: B, Pankti Gandhi ::: , Parth Oza ::: A, Prathamesh P ::: B, Raj Mehta ::: B, Rehan Fakir ::: A, Richa Desai ::: , Ronak Shah ::: U, Sachin Pangam  ::: B, Sandeep Poojary ::: B, Sandeep Verma ::: A, Sanika Pawar ::: , Sanket Mayani ::: U, Sanket Shah ::: A, Savan Patel ::: U, Shailesh Gawade ::: B, Shivang ::: A+, Shivani Kanal ::: , Siddhant Thakur  ::: U, Simranjeet ::: B, Sneha Natekar ::: , Sohail Qureshi ::: A, Sujay jakhadi ::: U, Sumer Mahapatra ::: U, Tiny ::: A, Vaibhav Dhole ::: A+, Vinita Sawant ::: , Viprali Walavalkar ::: , Vishal Chaniyara ::: U, Vraj Gandhi ::: U, Yash Jadav ::: U, Yogesh Karpe ::: B";
+    let a = str.split(", ");
+    let num = a.length;
+    let playerObject;
+
+    let playerName = "";
+    let playerGrade = "";
+
+    for (let i=0; i<num; i++)
+    {
+        playerName = a[i].split(" ::: ")[0];
+        playerGrade = a[i].split(" ::: ")[1];
+        if (playerGrade === "")
+        {
+
+        }
+        else
+        {
+            playerObject = getPlayerObjectFor(playerName)
+            playerObject.notes = "Grade " + playerGrade;
+        }
+    }
+}
